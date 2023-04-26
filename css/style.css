@@ -1,1 +1,68 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  height: 100px;
+  background-color: antiquewhite;
+}
+.wrapper__navigator {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75px;
+          flex: 0 0 75px;
+  background-color: aqua;
+}
+.wrapper__nomadlist {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 293px;
+          flex: 0 0 293px;
+}
+.wrapper__center {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #777;
+}
+.wrapper__profile {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 293px;
+          flex: 0 0 293px;
+  background-color: blue;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  height: 100px;
+  background-color: antiquewhite;
+}
+.wrapper__navigator {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75px;
+          flex: 0 0 75px;
+  background-color: aqua;
+}
+.wrapper__nomadlist {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 293px;
+          flex: 0 0 293px;
+}
+.wrapper__center {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #777;
+}
+.wrapper__profile {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 293px;
+          flex: 0 0 293px;
+  background-color: blue;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+
+.wrapper{
+    display: flex;
+    max-width: 1440px;
+    height:100px;
+    background-color: antiquewhite;
+
+
+    &__navigator{
+flex:0 0 75px ;
+background-color: aqua;
+    }
+    &__nomadlist{
+flex:0 0 293px;
+    }
+    &__center {
+flex: 1 1 auto;
+background-color: #777;
+    }
+    &__profile {
+        flex:0 0 293px;
+        background-color: blue;
+
+    }
+}
