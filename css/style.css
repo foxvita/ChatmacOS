@@ -26,7 +26,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background-color: #777;
+  background-color: #fff;
 }
 .wrapper__profile {
   -webkit-box-flex: 0;
@@ -58,11 +58,109 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background-color: #777;
+  background-color: #fff;
 }
 .wrapper__profile {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 293px;
           flex: 0 0 293px;
   background-color: blue;
+}
+
+.bell {
+  width: 14.5px;
+  height: 15.5px;
+  position: relative;
+}
+
+.redpointer {
+  width: 4px;
+  height: 4px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -2px;
+}
+
+.search {
+  width: 241px;
+  height: 33px;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 0 15px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.search input, .search button {
+  border: none;
+}
+.search button {
+  padding-top: 2px;
+}
+
+.center__header {
+  height: 60px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.center__channel {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 5px;
+}
+
+.center__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.center__visit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.center__search {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.center__notification {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.center__extention {
+  -ms-flex-item-align: center;
+      align-self: center;
 }/*# sourceMappingURL=style.css.map */

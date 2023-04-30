@@ -1,47 +1,72 @@
+@import "bell";
+@import "search";
 
-.center {
-}
+.center {}
+
 .center__header {
+    height: 60px;
+    padding: 10px;
+    display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
+
 .center__channel {
+    flex: 1 1 50%;
+    display: inline-flex;
+    gap: 5px;
 }
+
 .center__info {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: space-around;
 }
+
 .center__visit {
+   display: flex;
+   align-items: center;
+   gap: 5px;
 }
+
 .center__search {
+    align-self: center;
 }
+
 .center__notification {
+    align-self: center;
 }
+
 .center__extention {
+    align-self: center;
 }
-.center__main {
-}
-.center__card-jeshuastoun {
-}
-.card {
-}
-.center__data {
-}
-.data {
-}
-.center__card-haroldadams {
-}
-.center__card-aadalaine {
-}
-.center__card-nalahester {
-}
-.center__card-ramonbateman {
-}
-.center__footer {
-}
-.center__communic {
-}
-.center__attach {
-}
-.center__voise {
-}
-.center__messagein {
-}
-.center__emoji {
-}
+
+.center__main {}
+
+.center__card-jeshuastoun {}
+
+.card {}
+
+.center__data {}
+
+.data {}
+
+.center__card-haroldadams {}
+
+.center__card-aadalaine {}
+
+.center__card-nalahester {}
+
+.center__card-ramonbateman {}
+
+.center__footer {}
+
+.center__communic {}
+
+.center__attach {}
+
+.center__voise {}
+
+.center__messagein {}
+
+.center__emoji {}

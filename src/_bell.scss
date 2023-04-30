@@ -1,0 +1,14 @@
+.bell {
+    width: 14.5px;
+    height: 15.5px;
+    position: relative;
+}
+.redpointer {
+    width: 4px;
+    height: 4px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -2px;
+}
