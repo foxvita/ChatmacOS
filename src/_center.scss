@@ -1,9 +1,10 @@
 @import "bell";
 @import "search";
+@import "data";
 
-.center {}
+.chat {}
 
-.center__header {
+.chat__header {
     height: 60px;
     padding: 10px;
     display: flex;
@@ -11,62 +12,62 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.center__channel {
+.chat__channel {
     flex: 1 1 50%;
     display: inline-flex;
     gap: 5px;
 }
 
-.center__info {
+.chat__info {
     flex: 1 1 50%;
     display: flex;
     justify-content: space-around;
 }
 
-.center__visit {
+.chat__visit {
    display: flex;
    align-items: center;
    gap: 5px;
 }
 
-.center__search {
+.chat__search {
     align-self: center;
 }
 
-.center__notification {
+.chat__notification {
     align-self: center;
 }
 
-.center__extention {
+.chat__extention {
     align-self: center;
 }
 
-.center__main {}
+.chat__main {}
 
-.center__card-jeshuastoun {}
+.chat__card-jeshuastoun {}
 
 .card {}
 
-.center__data {}
+.chat__data {}
 
 .data {}
 
-.center__card-haroldadams {}
+.chat__card-haroldadams {}
 
-.center__card-aadalaine {}
+.chat__card-aadalaine {}
 
-.center__card-nalahester {}
+.chat__card-nalahester {}
 
-.center__card-ramonbateman {}
+.chat__card-ramonbateman {}
 
-.center__footer {}
+.chat__footer {}
 
-.center__communic {}
+.chat__communic {}
 
-.center__attach {}
+.chat__attach {}
 
-.center__voise {}
+.chat__voise {}
 
-.center__messagein {}
+.chat__messagein {}
 
-.center__emoji {}
+.chat__emoji {}
