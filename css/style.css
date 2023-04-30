@@ -25,6 +25,7 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 293px;
           flex: 0 0 293px;
+  background-color: rgb(38, 255, 0);
 }
 .wrapper__center {
   -webkit-box-flex: 1;
@@ -61,6 +62,7 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 293px;
           flex: 0 0 293px;
+  background-color: rgb(38, 255, 0);
 }
 .wrapper__center {
   -webkit-box-flex: 1;
@@ -116,11 +118,38 @@
 }
 
 .data {
-  height: 1px;
-  border-bottom: 1px solid #000;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+.data hr {
+  height: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
+}
+.data div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+.card__title {
+  display: inline-block;
+}
+.card__picture {
+  margin: 20px;
+}
 .chat__header {
   height: 60px;
   padding: 10px;
@@ -177,4 +206,14 @@
 .chat__extention {
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.chat__main {
+  padding: 18px 25px;
+}
+.chat__main > * {
+  margin-bottom: 10px;
+}
+.chat__main *:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+.card {
+   display: flex;
+   gap: 12px;
+    &__foto {
+                 
+    }
+
+    &__icon {
+        
+    }
+
+    &__title {
+        display: inline-block;
+    }
+
+    &__time {}
+
+    &__text {}
+
+    &__picture {
+        margin: 20px;
+    }
+
+    &__emodzy {}
+}

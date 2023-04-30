@@ -1,6 +1,8 @@
 @import "bell";
 @import "search";
 @import "data";
+@import "card";
+
 
 .chat {}
 
@@ -42,9 +44,19 @@
     align-self: center;
 }
 
-.chat__main {}
+.chat__main {
+padding: 18px 25px;
+&>* {
+    margin-bottom: 10px;
+}
+& *:last-child {
+    margin-bottom: 0;
+}
+}
 
-.chat__card-jeshuastoun {}
+.chat__card-jeshuastoun {
+    
+}
 
 .card {}
 
