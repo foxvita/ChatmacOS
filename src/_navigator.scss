@@ -1,13 +1,39 @@
 
 
-.navigator {
+.navigator {display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    
 
 &__dotos {
+    display: flex;
+    gap: 8px;
 }
+
 &__icoms {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
 }
 &__add {
 
 }
+}
+.circui {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.red {
+    background-color: red;
+}
+.yelow {
+    background: yellow;
+}
+.gren {
+    background: green;
 }
 

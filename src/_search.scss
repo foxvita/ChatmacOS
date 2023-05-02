@@ -8,8 +8,22 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   input, button {border: none;}
+
+   
+  
+   input, button {
+      outline: none;
+      border: none;
+      
+   }
+   input:focus::placeholder {
+     color: transparent;
+      
+   }
    button {
     padding-top: 2px;
+    &:hover {
+      cursor: pointer;
+   }
    }
 }

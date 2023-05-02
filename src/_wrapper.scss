@@ -2,15 +2,15 @@
     margin: 0 auto;
     display: flex;
     max-width: 1440px;
-    height: 801px;
+    max-height: 801px;
 
-    background-color: antiquewhite;
+    
     justify-content: space-between;
 
 
     &__navigator {
         flex: 0 0 75px;
-        background-color: aqua;
+        background-color: #000000;
         
     }
 
