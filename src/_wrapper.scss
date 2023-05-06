@@ -1,12 +1,13 @@
 .wrapper {
     margin: 0 auto;
+    margin-top: 40px;
     display: flex;
     max-width: 1440px;
     max-height: 801px;
 
     
     justify-content: space-between;
-
+    font-family: Lato;
 
     &__navigator {
         flex: 0 0 75px;
@@ -16,17 +17,17 @@
 
     &__nomadlist {
         flex: 0 0 293px;
-        background-color: rgb(38, 255, 0);
+        background-color: #B5B5B5;
     }
 
     &__center {
         flex: 1 1 auto;
-        background-color: #fff;
+        /*background-color: #fff;*/
     }
 
     &__profile {
         flex: 0 0 293px;
-        background-color: blue;
+        background-color: rgb(191, 191, 196);
 
     }
 }

@@ -1,8 +1,26 @@
 
 .nomadlist {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 25px 0 25px;
+    &__title {
+        position: relative;
+        
 
-&__title {
+    }
+&__title::after {
+    content:"";
+    position: absolute;
+    right: -13px;  
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    
+    background-image: url("../img/nomadlist/icon.svg");
+    
 }
+
 &__settings {
 }
 &__conteiner {

@@ -2,11 +2,31 @@
 @import "search";
 @import "data";
 @import "card";
+@import "variabl";
 
 
 .chat {
     display: flex;
     flex-direction: column;
+    @extend %scrol;
+
+    /*overflow: hidden;
+   background-color: $colorchat;
+    &::-webkit-scrollbar {
+        width: 7px;
+        
+      }
+      &::-webkit-scrollbar-track {
+        background-color: $colorchat;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.5);
+      }*/
+      
 
     header {
         flex: 0 0 60px;
@@ -76,26 +96,12 @@
 }
 
 
-.chat__data {}
-
-
-.chat__card-jeshuastoun {}
-
-.chat__card-haroldadams {}
-
-.chat__card-aadalaine {}
-
-.chat__card-nalahester {}
-
-.chat__card-ramonbateman {}
-
-
-
 
 .chat__footer {
 
 
-    padding: 10px;
+    padding: 10px 25px 10px 25px;
+    gap: 20px;
     display: flex;
     align-items: center;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
@@ -106,12 +112,25 @@
     display: flex;
 }
 .footer__attach {
+    flex: 0 0 30px ;
 }
+
 input[type="file"]{display:none}
 .footer__voise {
-    
+    flex: 0 0 30px ;
 }
 .footer__messagein {
+    flex: 1 1 auto;
+    
 }
+
+.footer__messagein textarea {
+    outline: none;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    @extend %scrol;
+} 
 .footer__emoji {
 }

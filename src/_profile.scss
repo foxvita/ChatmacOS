@@ -1,12 +1,16 @@
 .wrapper__profile {
 }
 .profile {
+    display: flex;
+    flex-direction: column;
 }
 .profile__foto {
 }
 .profile__info {
+    padding:25px 25px 30px 25px;
 }
 .socialmedia {
+    display: flex;
 }
 .icon {
     width: 22px;

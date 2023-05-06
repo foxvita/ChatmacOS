@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -10,6 +11,7 @@
 
 .wrapper {
   margin: 0 auto;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,6 +20,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: Lato;
 }
 .wrapper__navigator {
   -webkit-box-flex: 0;
@@ -29,23 +32,24 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 293px;
           flex: 0 0 293px;
-  background-color: rgb(38, 255, 0);
+  background-color: #B5B5B5;
 }
 .wrapper__center {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 .wrapper__profile {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 293px;
           flex: 0 0 293px;
-  background-color: blue;
+  background-color: rgb(191, 191, 196);
 }
 
 .wrapper {
   margin: 0 auto;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +58,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: Lato;
 }
 .wrapper__navigator {
   -webkit-box-flex: 0;
@@ -65,19 +70,19 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 293px;
           flex: 0 0 293px;
-  background-color: rgb(38, 255, 0);
+  background-color: #B5B5B5;
 }
 .wrapper__center {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 .wrapper__profile {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 293px;
           flex: 0 0 293px;
-  background-color: blue;
+  background-color: rgb(191, 191, 196);
 }
 
 .navigator {
@@ -133,6 +138,28 @@
   background: green;
 }
 
+.nomadlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 25px 0 25px;
+}
+.nomadlist__title {
+  position: relative;
+}
+.nomadlist__title::after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  background-image: url("../img/nomadlist/icon.svg");
+}
 .bell {
   width: 14.5px;
   height: 15.5px;
@@ -225,6 +252,24 @@
 .card__picture {
   margin: 20px;
 }
+.footer__messagein textarea, .chat {
+  overflow-y: auto; /* scroll*/
+  background-color: #ffffff;
+}
+.footer__messagein textarea::-webkit-scrollbar, .chat::-webkit-scrollbar {
+  width: 7px;
+}
+.footer__messagein textarea::-webkit-scrollbar-track, .chat::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+.footer__messagein textarea::-webkit-scrollbar-thumb, .chat::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.footer__messagein textarea::-webkit-scrollbar-thumb:hover, .chat::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .chat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,6 +278,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*overflow: hidden;
+  background-color: $colorchat;
+   &::-webkit-scrollbar {
+       width: 7px;
+
+     }
+     &::-webkit-scrollbar-track {
+       background-color: $colorchat;
+     }
+     &::-webkit-scrollbar-thumb {
+       background: rgba(0, 0, 0, 0.2);
+       border-radius: 4px;
+     }
+     &::-webkit-scrollbar-thumb:hover {
+       background: rgba(0, 0, 0, 0.5);
+     }*/
 }
 .chat header {
   -webkit-box-flex: 0;
@@ -314,7 +375,8 @@
 }
 
 .chat__footer {
-  padding: 10px;
+  padding: 10px 25px 10px 25px;
+  gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,8 +392,54 @@
   display: flex;
 }
 
+.footer__attach {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+}
+
 input[type=file] {
   display: none;
+}
+
+.footer__voise {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+}
+
+.footer__messagein {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.footer__messagein textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile__info {
+  padding: 25px 25px 30px 25px;
+}
+
+.socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .icon {
