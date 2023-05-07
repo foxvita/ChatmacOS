@@ -8,6 +8,9 @@
     
     justify-content: space-between;
     font-family: Lato;
+    a {
+        text-decoration: none;
+    }
 
     &__navigator {
         flex: 0 0 75px;
