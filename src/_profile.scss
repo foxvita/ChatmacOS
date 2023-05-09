@@ -3,6 +3,13 @@
 .profile {
     display: flex;
     flex-direction: column;
+
+    a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
 }
 
 .but {
@@ -10,6 +17,7 @@
     justify-content: center;
     align-items: center;
     background-color: #3577EF;
+    
     color: #ffffff;
     border-radius: 4px;
 
@@ -24,10 +32,38 @@
 
 .profile__info {
     padding: 25px 25px 30px 25px;
-
-    &>p {
+    .name {
+        
         margin-bottom: 20px;
     }
+    h3 {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    .presence {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: green;
+        border-radius: 50%;
+        
+   }
+
+    p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #5F6164;
+
+    }
+
+   
+
+   
 
     .socialmedia {
         margin-bottom: 20px;
@@ -46,7 +82,7 @@
         .profile__smoll-but {
             width: 25px;
             height: 25px;
-            
+
         }
 
     }
@@ -77,7 +113,7 @@
     height: 22px;
     border-radius: 50%;
     background-color: #E8E8EB;
-    
+
 }
 
 

@@ -1,34 +1,88 @@
+$colortext: #B5B5B5;
+/* переменная цвета текста Nomad List кроме белого*/
 
 .nomadlist {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 35px 25px 0 25px;
-    &__title {
-        position: relative;
-        
+    flex-direction: column;
+    color: $colortext;
+
+    ul {
+        list-style: none;
+    }
+
+    li {}
+
+
+
+}
+
+.nomadlist__title {
+    display: flex;
+
+}
+
+.nomadlist__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    flex: 1 1 auto;
+    display: flex;
+
+    &:after {
+        content: "";
+
+        width: 19px;
+        height: 19px;
+        background-color: blue;
+        background-image: url(../img/nomadlist/arrow.svg) 0 0 no-repeat;
 
     }
-&__title::after {
-    content:"";
-    position: absolute;
-    right: -13px;  
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    background-color: blue;
-    
-    background-image: url("../img/nomadlist/icon.svg");
-    
 }
 
-&__settings {
+/*.nomadlist__arrows {}*/
+
+.nomadlist__settings {}
+
+.nomadlist__treads {
+    display: flex;
+
+    &::before {
+        content: "";
+
+        width: 19px;
+        height: 19px;
+         background-color: blue;
+        background-image: url(../img/nomadlist/Icon8.svg) 0 0 no-repeat;
+
+    }
 }
-&__conteiner {
+
+.nomadlist__chanels {
+    span {
+        text-transform: uppercase;
+
+        &::after {
+            content: "11";
+        }
+    }
+   /* li {
+        display: none;
+    }
+    span:active ~ li {display: block;
+        
+    }*/
 }
-&__alltreads {
-}
-&__channels {
-}
-&__friends {
-}
+
+.nomadlist__friends {
+    span {
+        text-transform: uppercase;
+
+        &::after {
+            content: "82";
+        }
+    }
 }

@@ -1,7 +1,9 @@
-$colorchat:#ffffff;
+$colorchat:#ffffff; /* переменная для чата и напраувляющей для скрола */
+$colornomadlist:rgba(000, 000, 000, 0.65);
+
 %scrol {
     
-    overflow-y: auto; /* scroll*/
+    overflow-y: auto;                            /* шаблон scroll*/
     background-color: $colorchat;
     &::-webkit-scrollbar {
         width: 7px;
