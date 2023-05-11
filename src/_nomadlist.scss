@@ -6,23 +6,41 @@ $colortext: #B5B5B5;
     display: flex;
     flex-direction: column;
     color: $colortext;
+    cursor: auto;
 
     ul {
         list-style: none;
     }
+    li {
+        margin-bottom: 12px;
+        padding-left: 13px;
+    }
 
-    li {}
+    a {
+        color: $colortext;
+    }
+    .subtit {
+        margin-bottom: 22px;
+    }
+.activ {
 
-
-
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+    color: #FFFFFF;
+    border-radius: 5px;
+    
 }
-
+}
+/*-----------------------------------------------*/
 .nomadlist__title {
     display: flex;
 
 }
 
 .nomadlist__name {
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -46,8 +64,10 @@ $colortext: #B5B5B5;
 /*.nomadlist__arrows {}*/
 
 .nomadlist__settings {}
+/*------------------------------------------------*/
 
 .nomadlist__treads {
+    margin-bottom: 30px;
     display: flex;
 
     &::before {
@@ -55,21 +75,28 @@ $colortext: #B5B5B5;
 
         width: 19px;
         height: 19px;
-         background-color: blue;
+        background-color: blue;
         background-image: url(../img/nomadlist/Icon8.svg) 0 0 no-repeat;
 
     }
 }
 
 .nomadlist__chanels {
-    span {
+    margin-bottom: 17px;
+    .subtit {
+        display: flex;
+        justify-content: space-between;
         text-transform: uppercase;
 
         &::after {
-            content: "11";
+            content: "82";
+
         }
+
     }
-   /* li {
+
+
+    /* li {
         display: none;
     }
     span:active ~ li {display: block;
@@ -78,11 +105,32 @@ $colortext: #B5B5B5;
 }
 
 .nomadlist__friends {
-    span {
+
+    .subtit {
+        display: flex;
+        justify-content: space-between;
         text-transform: uppercase;
 
         &::after {
             content: "82";
+
         }
+
     }
+
+}
+
+.persona {
+    display: flex;
+   gap: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .circle {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        border-color: #ffffff;
+    }
+
 }
