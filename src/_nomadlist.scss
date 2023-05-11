@@ -11,78 +11,104 @@ $colortext: #B5B5B5;
     ul {
         list-style: none;
     }
+
     li {
         margin-bottom: 12px;
         padding-left: 13px;
     }
 
-    a {
-        color: $colortext;
-    }
+
+
     .subtit {
         margin-bottom: 22px;
     }
-.activ {
 
-    display: block;
-    width: 100%;
-    height: 30px;
-    background-color: grey;
-    color: #FFFFFF;
-    border-radius: 5px;
-    
+
 }
-}
+
 /*-----------------------------------------------*/
 .nomadlist__title {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 
+    & > div {
+        display: flex;
+        gap: 7px;
+
+    }
 }
 
 .nomadlist__name {
-    margin-bottom: 30px;
+    
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 
     color: #FFFFFF;
 
-    flex: 1 1 auto;
-    display: flex;
-
-    &:after {
-        content: "";
-
-        width: 19px;
-        height: 19px;
-        background-color: blue;
-        background-image: url(../img/nomadlist/arrow.svg) 0 0 no-repeat;
-
-    }
+       
 }
 
-/*.nomadlist__arrows {}*/
+.nomadlist__arrows {}
 
-.nomadlist__settings {}
+.nomadlist__settings {
+    
+    
+    
+}
+
 /*------------------------------------------------*/
 
 .nomadlist__treads {
     margin-bottom: 30px;
-    display: flex;
+    display: block;
+    position: relative;
 
     &::before {
         content: "";
 
         width: 19px;
         height: 19px;
-        background-color: blue;
-        background-image: url(../img/nomadlist/Icon8.svg) 0 0 no-repeat;
+        position: absolute;
+        left: -20px;
+       
+        background: url(../img/nomadlist/treads.svg) 0 0 no-repeat;
 
     }
 }
 
 .nomadlist__chanels {
     margin-bottom: 17px;
+
+    a {
+        display: flex;
+        align-items: center;
+        padding-left: 13px;
+        color: $colortext;
+
+
+        height: 30px;
+        /* background-color: grey;*/
+        border-radius: 5px;
+
+    }
+
+    /*------- Активная ссылка li  -*/
+    .activ {
+
+        display: flex;
+
+        height: 30px;
+        background-color: grey;
+        color: #ffffff;
+        border-radius: 5px;
+
+    }
+
+
     .subtit {
         display: flex;
         justify-content: space-between;
@@ -90,9 +116,7 @@ $colortext: #B5B5B5;
 
         &::after {
             content: "82";
-
         }
-
     }
 
 
@@ -105,6 +129,9 @@ $colortext: #B5B5B5;
 }
 
 .nomadlist__friends {
+    a {
+        color: $colortext ;
+    }
 
     .subtit {
         display: flex;
@@ -122,15 +149,19 @@ $colortext: #B5B5B5;
 
 .persona {
     display: flex;
-   gap: 5px;
+    gap: 15px;
     align-items: center;
     margin-bottom: 10px;
 
+.foto {
+    border-radius: 4px;
+}
+
     .circle {
-        width: 4px;
-        height: 4px;
+        width: 5px;
+        height: 5px;
         border-radius: 50%;
-        border-color: #ffffff;
+        border-color: #0fa70f;
     }
 
 }

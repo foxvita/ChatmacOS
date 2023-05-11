@@ -169,73 +169,84 @@
   margin-bottom: 12px;
   padding-left: 13px;
 }
-.nomadlist a {
-  color: #B5B5B5;
-}
 .nomadlist .subtit {
   margin-bottom: 22px;
-}
-.nomadlist .activ {
-  display: block;
-  width: 100%;
-  height: 30px;
-  background-color: grey;
-  color: #FFFFFF;
-  border-radius: 5px;
 }
 
 /*-----------------------------------------------*/
 .nomadlist__title {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.nomadlist__title > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
 }
 
 .nomadlist__name {
-  margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.nomadlist__name:after {
-  content: "";
-  width: 19px;
-  height: 19px;
-  background-color: blue;
-  background-image: url(../img/nomadlist/arrow.svg) 0 0 no-repeat;
 }
 
-/*.nomadlist__arrows {}*/
 /*------------------------------------------------*/
 .nomadlist__treads {
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  position: relative;
 }
 .nomadlist__treads::before {
   content: "";
   width: 19px;
   height: 19px;
-  background-color: blue;
-  background-image: url(../img/nomadlist/Icon8.svg) 0 0 no-repeat;
+  position: absolute;
+  left: -20px;
+  background: url(../img/nomadlist/treads.svg) 0 0 no-repeat;
 }
 
 .nomadlist__chanels {
   margin-bottom: 17px;
+  /*------- Активная ссылка li  -*/
   /* li {
       display: none;
   }
   span:active ~ li {display: block;
 
   }*/
+}
+.nomadlist__chanels a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 13px;
+  color: #B5B5B5;
+  height: 30px;
+  /* background-color: grey;*/
+  border-radius: 5px;
+}
+.nomadlist__chanels .activ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  background-color: grey;
+  color: #ffffff;
+  border-radius: 5px;
 }
 .nomadlist__chanels .subtit {
   display: -webkit-box;
@@ -250,6 +261,9 @@
   content: "82";
 }
 
+.nomadlist__friends a {
+  color: #B5B5B5;
+}
 .nomadlist__friends .subtit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,17 +281,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
 }
+.persona .foto {
+  border-radius: 4px;
+}
 .persona .circle {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  border-color: #ffffff;
+  border-color: #0fa70f;
 }
 
 .bell {
