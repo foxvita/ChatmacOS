@@ -4,7 +4,8 @@
     display: flex;
     max-width: 1440px;
     max-height: 801px;
-    background: url(../img/substrate.jpg);
+    background: url("../img/substrate.jpg") no-repeat;
+    background-size: cover;
     justify-content: space-between;
     font-family: Lato;
 
@@ -19,7 +20,7 @@
 
     &__nomadlist {
         padding:  26px 35px;
-        flex: 0 0 293px;
+        flex: 0 0 260px;
         background-color: $colornomadlist;
         overflow-y: scroll; 
         cursor: pointer;
@@ -53,7 +54,7 @@
         
     }
     &__profile {
-        flex: 0 0 293px;
+        flex: 0 0 201px;
         background-color: rgba(225, 225, 225, 0.8);
     
     }

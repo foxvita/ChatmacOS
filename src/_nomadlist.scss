@@ -14,7 +14,7 @@ $colortext: #B5B5B5;
 
     li {
         margin-bottom: 12px;
-        padding-left: 13px;
+        
     }
 
 
@@ -34,7 +34,7 @@ $colortext: #B5B5B5;
     align-items: center;
     margin-bottom: 30px;
 
-    & > div {
+    &>div {
         display: flex;
         gap: 7px;
 
@@ -42,42 +42,33 @@ $colortext: #B5B5B5;
 }
 
 .nomadlist__name {
-    
+
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 
     color: #FFFFFF;
 
-       
+
 }
 
 .nomadlist__arrows {}
 
-.nomadlist__settings {
-    
-    
-    
-}
+.nomadlist__settings {}
 
 /*------------------------------------------------*/
 
 .nomadlist__treads {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 30px;
-    display: block;
-    position: relative;
-
-    &::before {
-        content: "";
-
-        width: 19px;
-        height: 19px;
-        position: absolute;
-        left: -20px;
-       
-        background: url(../img/nomadlist/treads.svg) 0 0 no-repeat;
-
+    div {
+        width: 18px;
+        padding-top: 3px;
+        
     }
+      
 }
 
 .nomadlist__chanels {
@@ -153,15 +144,26 @@ $colortext: #B5B5B5;
     align-items: center;
     margin-bottom: 10px;
 
-.foto {
-    border-radius: 4px;
-}
-
     .circle {
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        border-color: #0fa70f;
+    }
+
+    .ofline {
+        background-color: #B6B6B6;
+    }
+
+    .foto {
+        border-radius: 4px;
+    }
+
+    .online {
+
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #0fa70f;
     }
 
 }

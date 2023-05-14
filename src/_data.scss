@@ -2,10 +2,13 @@
     display: flex;
     align-items: center;
     gap:14px; 
+    padding: 20px;
+    color:#8D8D8D;
     hr {
         
         height: 0;
         flex: 0 1 300px;
+        opacity: 0.3;
     }
     & div {
         flex: 1 0 auto;
