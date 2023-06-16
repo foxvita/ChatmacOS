@@ -72,18 +72,19 @@
   width: 15px;
 }
 .wrapper__nomadlist::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.65);
+  /*background-color: $colornomadlist;      */
+  background-color: transparent;
 }
 .wrapper__nomadlist::-webkit-scrollbar-thumb {
   width: 7px;
   height: 141px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), color-stop(30%, rgba(0, 0, 0, 0.65)), color-stop(grey), color-stop(30%), color-stop(grey), color-stop(70%), color-stop(70%, rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 30%, grey, 30%, grey, 70%, rgba(0, 0, 0, 0.65) 70%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0.65)), color-stop(grey), color-stop(30%), color-stop(grey), color-stop(70%), color-stop(70%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 30%, grey, 30%, grey, 70%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
   border-radius: 20px;
 }
 .wrapper__nomadlist::-webkit-scrollbar-thumb:hover {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), color-stop(30%, rgba(0, 0, 0, 0.65)), color-stop(#e6f0e8), color-stop(30%), color-stop(#dce2dd), color-stop(70%), color-stop(70%, rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 30%, #e6f0e8, 30%, #dce2dd, 70%, rgba(0, 0, 0, 0.65) 70%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0)), color-stop(#e6f0e8), color-stop(30%), color-stop(#dce2dd), color-stop(70%), color-stop(70%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, #e6f0e8, 30%, #dce2dd, 70%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
 }
 .wrapper__center {
   -webkit-box-flex: 1;
